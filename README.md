@@ -1,5 +1,5 @@
 [![pages-build-deployment](https://github.com/theG4brielNFT/theg4briel.crypto/actions/workflows/pages/pages-build-deployment/badge.svg?branch=landing-page)](https://github.com/theG4brielNFT/theg4briel.crypto/actions/workflows/pages/pages-build-deployment)
-
+[![CI](https://github.com/theG4brielNFT/theg4briel.crypto/actions/workflows/main.yml/badge.svg?branch=landing-page)](https://github.com/theG4brielNFT/theg4briel.crypto/actions/workflows/main.yml)
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="assets/css/G4brielMetaverse.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
-  </head>
+</head>
 
 <body style="background-color:#FFF">
 
@@ -84,10 +83,10 @@
                   </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
-                      <a href="https://www.opensea.io/collection/avataridentity" target="_blank" rel="noopener noreferrer">Opensea</a>
+                      <a href="https://opensea.io/collection/avataridentity" target="_blank" rel="noopener noreferrer">Opensea</a>
                     </div>
                     <div class="white-button scroll-to-section">
-                      <a href="https://www.nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75" target="_blank" rel="noopener noreferrer">NFTtrade</i></a>
+                      <a href="https://nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75" target="_blank" rel="noopener noreferrer">NFTtrade</i></a>
                     </div>
                   </div>
                 </div>
@@ -131,7 +130,7 @@
             <img src="assets/images/aria.jpg" alt="Aria">
             <hr>
             <div class="text-button">
-              <a href="https://www.opensea.io/collection/avataridentity" target="_blank" rel="noopener noreferrer">More NFT<i class="fa fa-arrow-right"></i></a>
+              <a href="https://opensea.io/collection/avataridentity" target="_blank" rel="noopener noreferrer">More NFT<i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -149,7 +148,7 @@
             <img src="assets/images/Avatar Core Female.jpg" alt="Avatar Core Female">
             <hr>
             <div class="text-button">
-              <a href="https://www.nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75" target="_blank" rel="noopener noreferrer">More NFT<i class="fa fa-arrow-right"></i></a>
+              <a href="https://nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75" target="_blank" rel="noopener noreferrer">More NFT<i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -173,7 +172,7 @@
                 <br>
                 <img src="assets/images/Proofofworkart.gif" alt="Proof of Artwork theG4briel.nft">
                 <div class="gradient-button">
-                	<a href="https://www.youtube.com/c/theG4brielNFT" target="_blank">Follow My Channel</a>
+                	<a href="https://www.youtube.com/c/theG4brielNFT" target="_blank" rel="noopener noreferrer">Follow My Channel</a>
                 	<p>for watch more drawing video</p>
               	</div>
               </div>
