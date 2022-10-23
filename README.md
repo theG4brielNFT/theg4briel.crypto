@@ -222,7 +222,7 @@
 	  <div class="row">
         <div class="col-lg-12">
           <div class="copyright-text" align="center">
-            <h9>Copyright © 2022 G4briel Metaverse. Images Rights Reserved.</h9>
+            <h9>Copyright © 2022 G4briel Metaverse. Images Rights Reserved</h9>
           </div>
         </div>
       </div>
