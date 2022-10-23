@@ -1,3 +1,4 @@
+[![pages-build-deployment](https://github.com/theG4brielNFT/theg4briel.crypto/actions/workflows/pages/pages-build-deployment/badge.svg?branch=landing-page)](https://github.com/theG4brielNFT/theg4briel.crypto/actions/workflows/pages/pages-build-deployment)
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,10 +83,10 @@
                   </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
-                      <a href="https://www.opensea.io/collection/avataridentity">Opensea</a>
+                      <a href="https://www.opensea.io/collection/avataridentity" target="_blank">Opensea</a>
                     </div>
                     <div class="white-button scroll-to-section">
-                      <a href="https://www.nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75">NFTtrade</i></a>
+                      <a href="https://www.nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75" target="_blank">NFTtrade</i></a>
                     </div>
                   </div>
                 </div>
@@ -129,7 +130,7 @@
             <img src="assets/images/aria.jpg" alt="Aria">
             <hr>
             <div class="text-button">
-              <a href="https://www.opensea.io/collection/avataridentity">More NFT<i class="fa fa-arrow-right"></i></a>
+              <a href="https://www.opensea.io/collection/avataridentity" target="_blank">More NFT<i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -147,7 +148,7 @@
             <img src="assets/images/Avatar Core Female.jpg" alt="Avatar Core Female">
             <hr>
             <div class="text-button">
-              <a href="https://www.nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75">More NFT<i class="fa fa-arrow-right"></i></a>
+              <a href="https://www.nftrade.com/assets/polygon/0x3e02d40c020e82e07cccab0435f81cad62294a75" target="_blank">More NFT<i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -171,7 +172,7 @@
                 <br>
                 <img src="assets/images/Proofofworkart.gif" alt="Proof of Artwork theG4briel.nft">
                 <div class="gradient-button">
-                	<a href="https://www.youtube.com/c/theG4brielNFT">Follow My Channel</a>
+                	<a href="https://www.youtube.com/c/theG4brielNFT" target="_blank">Follow My Channel</a>
                 	<p>for watch more drawing video</p>
               	</div>
               </div>
