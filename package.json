@@ -1,7 +1,8 @@
 {
   "name": "theG4briel.crypto",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "theG4briel <theg4briel.nft@ud.me>",
+  "description": "Official Page theG4briel Art, display part of collections and linked to nfts market place & Proof of Artwork for show originality of theG4briel Art"
   "license": "MIT",
   "homepage": "https://",
   "dependencies": {
