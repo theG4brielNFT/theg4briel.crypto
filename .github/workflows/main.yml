@@ -28,6 +28,8 @@ jobs:
     - name: Build
       run: |
        npm i npm
+       npm install web3
+       npm install web3-utils
       env:
        G_NPM: ${{ secrets.G_NPM2 }}
        
