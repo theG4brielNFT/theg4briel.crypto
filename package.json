@@ -4,7 +4,7 @@
   "author": "theG4briel <theg4briel.nft@ud.me>",
   "description": "Official Page theG4briel Art, display part of collections and linked to nfts market place & Proof of Artwork for show originality of theG4briel Art",
   "license": "MIT",
-  "homepage": "https://theg4brielnft.github.io/theg4briel.crypto/",
+  "homepage": "https://theg4brielnft.github.io/",
   "dependencies": {
     "minimist": "1.2.7",
     "react": "16.11.0",
