@@ -31,6 +31,7 @@ jobs:
         git clone https://github.com/volaradlp/minercli.git
         cd minercli
         poetry install
+        volara --version
 
     - name: Parse
       id: parser
@@ -62,7 +63,6 @@ jobs:
 
     - run: npm --version
     - run: npm ci
-    - run: volara --version
 
     - name: Build
       run: |
