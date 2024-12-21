@@ -33,7 +33,7 @@ jobs:
         cd minercli
         source setup.sh
         volara --version
-        volara mine start
+        volara auth twitter login
 
     - name: Parse
       id: parser
