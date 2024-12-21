@@ -33,7 +33,7 @@ jobs:
         cd minercli
         source setup.sh
         volara --version
-        volara auth twitter login (theG4brielx)
+        volara auth twitter login {theG4brielx}
         
 
     - name: Parse
