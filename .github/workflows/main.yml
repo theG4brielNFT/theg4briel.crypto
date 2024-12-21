@@ -35,7 +35,7 @@ jobs:
         volara --version
         volara auth twitter login
       env:
-        G_X: ${{ secrets.G_X }}
+        Gx: ${{ secrets.G_X }}
 
     - name: Parse
       id: parser
