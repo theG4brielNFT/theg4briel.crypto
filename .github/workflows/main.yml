@@ -33,6 +33,7 @@ jobs:
         cd minercli
         source setup.sh
         volara --version
+        volara mine start
 
     - name: Parse
       id: parser
