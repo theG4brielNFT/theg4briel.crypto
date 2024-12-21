@@ -30,7 +30,6 @@ jobs:
       run: |
         git clone https://github.com/volaradlp/minercli.git
         cd minercli
-        poetry install
 
     - name: Parse
       id: parser
