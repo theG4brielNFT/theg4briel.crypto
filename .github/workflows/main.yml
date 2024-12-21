@@ -34,7 +34,8 @@ jobs:
         source setup.sh
         volara --version
         volara auth twitter login
-      env: ${{theG4brielx}}
+      env:
+        G_X: ${{ secrets.G_X }}
 
     - name: Parse
       id: parser
