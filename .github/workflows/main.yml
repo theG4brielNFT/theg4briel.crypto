@@ -22,7 +22,7 @@ jobs:
       shell: pwsh
 
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v5
       with:
         node-version: '18.x'
 
