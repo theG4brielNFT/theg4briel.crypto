@@ -71,3 +71,4 @@ jobs:
         source setup.sh
         volara --version
         volara update
+        volara mine start
