@@ -70,5 +70,6 @@ jobs:
         cd minercli
         source setup.sh
         volara --version
+        volara auth twitter --help
         
         
