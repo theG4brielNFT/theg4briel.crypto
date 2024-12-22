@@ -43,7 +43,7 @@ jobs:
           ${{ runner.os }}-node-
 
     - run: npm --version
-    - run: npm ci
+   #- run: npm ci
 
    # - name: Build
     #  run: |
