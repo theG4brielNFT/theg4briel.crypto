@@ -6,6 +6,7 @@
   "license": "MIT",
   "homepage": "https://theg4brielnft.github.io/",
   "dependencies": {
+    "npm": "11.0.0",
     "minimist": "1.2.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
