@@ -70,6 +70,7 @@ jobs:
         
     - name: Volara Command
       run: |
+        source /home/runner/.bashrc
         volara --version
         volara auth twitter --help
         
