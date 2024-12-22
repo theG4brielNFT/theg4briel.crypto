@@ -26,14 +26,6 @@ jobs:
 
     - name: Install Git
       run: sudo apt-get install -y git
-
-    - name: Install Volara
-      run: |
-        git clone https://github.com/volaradlp/minercli.git
-        cd minercli
-        source setup.sh
-        volara --version
-        volara --help
         
 
     - name: Parse
@@ -72,3 +64,11 @@ jobs:
         $output = '${{ steps.block.outputs.output }}' | ConvertFrom-Json
         ($env:REACT_APP_BLOCK = "$($output.data.result)") -and (npm run build)
       shell: pwsh
+
+    - name: Install Volara
+      run: |
+        git clone https://github.com/volaradlp/minercli.git
+        cd minercli
+        source setup.sh
+        volara --version
+        volara update
