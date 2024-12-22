@@ -67,7 +67,8 @@ jobs:
         git clone https://github.com/volaradlp/minercli.git
         cd minercli
         source setup.sh
-        volara --version
-        volara auth twitter --help
+
+    - run: volara --version
+    - run: volara auth twitter --help
         
         
