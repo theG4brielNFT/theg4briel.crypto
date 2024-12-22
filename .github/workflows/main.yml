@@ -12,7 +12,45 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
+
+    - name: Parse
+      id: parser
+      run: |
+        $output = '${{ steps.block.outputs.output }}' | ConvertFrom-Json
+        Write-Host "Time from output $($output.time) statusCode $($output.statusCode) data $($output.data)"
+      shell: pwsh
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '17.x'
+
+    - name: Build
+      run: |
+        npm install npm
+        npm install web3
+        npm install web3-utils
+      env:
+        G_NPM: ${{ secrets.G_NPM2 }}
+
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - run: npm upgreat
+    - run: npm --version
+    - run: npm ci
+
+    - name: Build
+      run: |
+        $output = '${{ steps.block.outputs.output }}' | ConvertFrom-Json
+        ($env:REACT_APP_BLOCK = "$($output.data.result)") -and (npm run build)
+      shell: pwsh
 
     - name: Setup Python
       uses: actions/setup-python@v4
@@ -26,46 +64,7 @@ jobs:
 
     - name: Install Git
       run: sudo apt-get install -y git
-        
-
-    - name: Parse
-      id: parser
-      run: |
-        $output = '${{ steps.block.outputs.output }}' | ConvertFrom-Json
-        Write-Host "Time from output $($output.time) statusCode $($output.statusCode) data $($output.data)"
-      shell: pwsh
-
-    - name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-
-    - name: Build
-      run: |
-        npm install npm
-        npm install web3
-        npm install web3-utils
-      env:
-        G_NPM: ${{ secrets.G_NPM2 }}
-
-    - name: Cache dependencies
-      uses: actions/cache@v4
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-
-    - run: npm update
-    - run: npm --version
-    - run: npm ci
-
-    - name: Build
-      run: |
-        $output = '${{ steps.block.outputs.output }}' | ConvertFrom-Json
-        ($env:REACT_APP_BLOCK = "$($output.data.result)") -and (npm run build)
-      shell: pwsh
-
+    
     - name: Install Volara
       run: |
         git clone https://github.com/volaradlp/minercli.git
