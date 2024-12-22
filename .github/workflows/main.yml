@@ -69,7 +69,7 @@ jobs:
         source setup.sh
         
     - name: Volara Command
-    - run: |
+      run: |
         volara --version
         volara auth twitter --help
         
