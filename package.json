@@ -6,13 +6,12 @@
   "license": "MIT",
   "homepage": "https://theg4brielnft.github.io/",
   "dependencies": {
-    "minimist": "1.2.7",
+    "minimist": "8",
     "react": "18",
     "react-dom": "18",
-    "react-scripts": "5.0.1",
-    "web3": "1.8.1",
-    "web3-utils": "1.8.1",
-    "npm": "18"
+    "react-scripts": "8",
+    "web3": "2",
+    "web3-utils": "2"
   },
   "scripts": {
     "start": "react-scripts start",
