@@ -24,11 +24,11 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v4
       with:
-        node-version: '22.x'
+        node-version: '23.x'
 
     - name: Build
       run: |
-        npm i npm@v11
+        npm install
       env:
         G_NPM: ${{ secrets.G_NPM2 }}
 
