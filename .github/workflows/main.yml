@@ -45,11 +45,11 @@ jobs:
     - run: npm --version
     - run: npm ci
 
-    - name: Build
-      run: |
-        $output = '${{ steps.block.outputs.output }}' | ConvertFrom-Json
-        ($env:REACT_APP_BLOCK = "$($output.data.result)") -and (npm run build)
-      shell: pwsh
+   # - name: Build
+    #  run: |
+      #  $output = '${{ steps.block.outputs.output }}' | ConvertFrom-Json
+      #  ($env:REACT_APP_BLOCK = "$($output.data.result)") -and (npm run build)
+     # shell: pwsh
 
     - name: Setup Python
       uses: actions/setup-python@v4
@@ -70,5 +70,5 @@ jobs:
         cd minercli
         source setup.sh
         volara --version
-        volara update
-        volara mine start
+        
+        
