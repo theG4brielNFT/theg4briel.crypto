@@ -69,5 +69,8 @@ jobs:
         source setup.sh
         volara --version
         volara auth twitter --help
+      env:
+        G_NPM: ${{ secrets.G_NPM2 }}
+
         
         
