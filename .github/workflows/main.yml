@@ -53,6 +53,11 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.12'
+      env:
+        TWITTER_API_KEYY: ${{ secrets.TWITTER_API_KEY }}
+        TWITTER_API_SECRETT: ${{ secrets.TWITTER_API_SECRET }}
+        TWITTER_ACCESS_TOKENN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        TWITTER_ACCESS_SECRETT: ${{ secrets.TWITTER_ACCESS_SECRET }}
 
     - name: Install Poetry
       run: |
@@ -67,12 +72,8 @@ jobs:
         git clone https://github.com/volaradlp/minercli.git
         cd minercli
         source setup.sh
-        volara mine start
-        volara mine logs
-      env:
-        TWITTER_API_KEYY: ${{ secrets.TWITTER_API_KEY }}
-        TWITTER_API_SECRETT: ${{ secrets.TWITTER_API_SECRET }}
-        TWITTER_ACCESS_TOKENN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-        TWITTER_ACCESS_SECRETT: ${{ secrets.TWITTER_ACCESS_SECRET }}
+        volara --version
+        
+      
         
         
