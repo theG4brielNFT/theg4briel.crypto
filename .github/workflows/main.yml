@@ -70,14 +70,14 @@ jobs:
         git clone https://github.com/volaradlp/minercli.git
         cd minercli
         source setup.sh
-        poetry --version
         volara --version
+        volara auth twitter login
         
       env:
         TWITTER_API_KEYY: ${{ secrets.X_API_KEY }}
-        TWITTER_API_SECRETT: ${{ secrets.X_API_SECRET }}
+        #TWITTER_API_SECRETT: ${{ secrets.X_API_SECRET }}
         TWITTER_ACCESS_TOKENN: ${{ secrets.X_ACCESS_TOKEN }}
-        TWITTER_ACCESS_SECRETT: ${{ secrets.X_ACCESS_SECRET }}
+        #TWITTER_ACCESS_SECRETT: ${{ secrets.X_ACCESS_SECRET }}
       
         
       
