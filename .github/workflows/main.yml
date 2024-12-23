@@ -67,7 +67,7 @@ jobs:
         git clone https://github.com/volaradlp/minercli.git
         cd minercli
         source setup.sh
-        volara auth twitter login
+        volara --version
       env:
         TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
         TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
